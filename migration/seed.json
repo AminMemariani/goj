@@ -1,0 +1,34 @@
+[
+    {
+        "title": "Love Songs",
+        "desc": "Lorem ipsum sit apmet",
+        "songs": [
+            {
+                "title": "Song 1",
+                "image_url": "https://www.bensound.com/bensound-img/ukulele.jpg",
+                "audio_url": "https://www.bensound.com/bensound-music/bensound-ukulele.mp3"
+            },
+            {
+                "title": "Song 2",
+                "image_url": "https://www.bensound.com/bensound-img/creativeminds.jpg",
+                "audio_url": "https://www.bensound.com/bensound-music/bensound-creativeminds.mp3"
+            }
+        ]
+    },
+    {
+        "title": "Hate Songs",
+        "desc": "Lorem ipsum sit apmet",
+        "songs": [
+            {
+                "title": "Hate Song 1",
+                "image_url": "https://www.bensound.com/bensound-img/anewbeginning.jpg",
+                "audio_url": "https://www.bensound.com/bensound-music/bensound-anewbeginning.mp3"
+            },
+            {
+                "title": " HateSong 2",
+                "image_url": "https://www.bensound.com/bensound-img/littleidea.jpg",
+                "audio_url": "https://www.bensound.com/bensound-music/bensound-littleidea.mp3"
+            }
+        ]
+    }
+]
