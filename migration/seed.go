@@ -4,14 +4,14 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"goj/model"
 	"os"
 
 	"go.mongodb.org/mongo-driver/mongo"
+
+	"goj/model"
 )
 
-func Seed(client *mongo.Client) {
-
+func Seed(db *mongo.Database) {
 	data, err := os.ReadFile("./migration/seed.json")
 	if err != nil {
 		panic(err)
@@ -23,17 +23,24 @@ func Seed(client *mongo.Client) {
 		panic(err)
 	}
 
-	coll := client.Database("gojdb").Collection("albums")
-
-	res, err := coll.
+	coll := db.Collection("albums")
 
 	for _, album := range albums {
 		res, err := coll.InsertOne(context.TODO(), album)
 		if err != nil {
 			panic(err)
 		}
-
 		fmt.Println(res)
 	}
 
+	// var manyModel []interface{}
+
+	// for _, album := range albums {
+	// 	manyModel = append(manyModel, album)
+	// }
+
+	// _, err = coll.InsertMany(context.TODO(), manyModel)
+	// if err != nil {
+	// 	panic(err)
+	// }
 }

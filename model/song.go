@@ -5,6 +5,7 @@ import (
 )
 
 type Song struct {
+	//bson:"_id,omitempty"
 	ID       primitive.ObjectID `bson:"_id,omitempty" json:"id,omitempty"`
 	Title    string             `bson:"title,omitempty" json:"title,omitempty"`
 	AudioUrl string             `bson:"audio_url,omitempty" json:"audio_url,omitempty"`
